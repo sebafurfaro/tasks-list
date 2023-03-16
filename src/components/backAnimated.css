@@ -1,0 +1,33 @@
+.balls {
+  width: 40vw;
+  height:40vw;
+  border-radius: 100%;
+  position: absolute;
+}
+.ball-1 {
+  top:-10%;
+  left:-10%;
+  background:#2dffc4;
+  box-shadow: 0px 0px 105px 45px rgba(45,255,196,0.9);
+  animation: ball infinite 4s ease-in-out;
+}
+.ball-2 {
+  bottom:-10%;
+  right:-10%;
+  box-shadow: 0px 0px 105px 45px rgba(238,46,255,0.9);
+  background:#ee2eff;
+  animation: ball infinite 3s ease-in-out;
+  animation-delay: 500ms;
+}
+
+@keyframes ball {
+  0% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5%);
+  }
+}
